@@ -1,6 +1,6 @@
 #include <iostream>
-#include  "car.h"
-#include  <string>
+#include <string>
+#include "car2.h"
 using namespace std;
 int main()
 {
@@ -30,7 +30,7 @@ switch(a)
 {
 case 1:
 mersedes=bmw;
-mersedes.printf();
+cout<<mersedes;
 break;
 case 2:
 if (bmw==mersedes)
@@ -83,12 +83,17 @@ else
 break;
 case 8:
 ++bmw;
-bmw.printf();
+cout<<bmw;
 break;
 case 9:
+if (speed>0)
+{
 --bmw;
-bmw.printf();
+cout<<bmw;
+}
+else cout<<"Данная операция не возможна"<<endl;
 break;
 }
 return 0;
 }
+
